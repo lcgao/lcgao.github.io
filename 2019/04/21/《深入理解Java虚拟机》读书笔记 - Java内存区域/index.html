@@ -79,19 +79,17 @@
 
 
 
-<meta name="description" content="最近项目有用到状态栏着色，之前一直都有参考Android 状态栏着色实践一文，挺好的。今天决定自己写一点关于状态栏着色的笔记，省的以后用上的时候又去翻收藏夹找文章。">
+<meta name="description" content="运行时数据区域程序计数器&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;程序计数器（Program Counter Register）是一块较小的内存空间，线程私有，它可以看作是当前线程所执行的字节码的行号指示器。字节码指示器通过改变这个计数器的值来选取下一条需要执行的字节码指令，分支、循环、跳转、异常处理、线程恢复等基础功能都要依赖这个计数器来完成。如果正在执行的是Nat">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Android状态栏着色小记">
-<meta property="og:url" content="http://yoursite.com/2017/12/21/Android状态栏着色小记/index.html">
+<meta property="og:title" content="《深入理解Java虚拟机》读书笔记 - Java内存区域">
+<meta property="og:url" content="http://yoursite.com/2019/04/21/《深入理解Java虚拟机》读书笔记 - Java内存区域/index.html">
 <meta property="og:site_name" content="Lcgao&#39;s Blog">
-<meta property="og:description" content="最近项目有用到状态栏着色，之前一直都有参考Android 状态栏着色实践一文，挺好的。今天决定自己写一点关于状态栏着色的笔记，省的以后用上的时候又去翻收藏夹找文章。">
+<meta property="og:description" content="运行时数据区域程序计数器&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;程序计数器（Program Counter Register）是一块较小的内存空间，线程私有，它可以看作是当前线程所执行的字节码的行号指示器。字节码指示器通过改变这个计数器的值来选取下一条需要执行的字节码指令，分支、循环、跳转、异常处理、线程恢复等基础功能都要依赖这个计数器来完成。如果正在执行的是Nat">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/4093296-8cc2bc8e8ba9504e.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:updated_time" content="2017-12-22T01:38:14.730Z">
+<meta property="og:updated_time" content="2019-04-21T13:14:00.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Android状态栏着色小记">
-<meta name="twitter:description" content="最近项目有用到状态栏着色，之前一直都有参考Android 状态栏着色实践一文，挺好的。今天决定自己写一点关于状态栏着色的笔记，省的以后用上的时候又去翻收藏夹找文章。">
-<meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/4093296-8cc2bc8e8ba9504e.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta name="twitter:title" content="《深入理解Java虚拟机》读书笔记 - Java内存区域">
+<meta name="twitter:description" content="运行时数据区域程序计数器&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;程序计数器（Program Counter Register）是一块较小的内存空间，线程私有，它可以看作是当前线程所执行的字节码的行号指示器。字节码指示器通过改变这个计数器的值来选取下一条需要执行的字节码指令，分支、循环、跳转、异常处理、线程恢复等基础功能都要依赖这个计数器来完成。如果正在执行的是Nat">
 
 
 
@@ -121,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/12/21/Android状态栏着色小记/"/>
+  <link rel="canonical" href="http://yoursite.com/2019/04/21/《深入理解Java虚拟机》读书笔记 - Java内存区域/"/>
 
 
 
 
 
-  <title>Android状态栏着色小记 | Lcgao's Blog</title>
+  <title>《深入理解Java虚拟机》读书笔记 - Java内存区域 | Lcgao's Blog</title>
   
 
 
@@ -202,6 +200,16 @@
         </li>
       
         
+        <li class="menu-item menu-item-android">
+          <a href="/categories/Android/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-android"></i> <br />
+            
+            Android
+          </a>
+        </li>
+      
+        
         <li class="menu-item menu-item-archives">
           <a href="/archives/" rel="section">
             
@@ -244,7 +252,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/21/Android状态栏着色小记/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/21/《深入理解Java虚拟机》读书笔记 - Java内存区域/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="lcgao">
@@ -261,7 +269,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Android状态栏着色小记</h1>
+          <h1 class="post-title" itemprop="name headline">《深入理解Java虚拟机》读书笔记 - Java内存区域</h1>
         
 
         <div class="post-meta">
@@ -273,8 +281,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-21T21:24:08+08:00">
-                2017-12-21
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-21T21:14:00+08:00">
+                2019-04-21
               </time>
             
 
@@ -284,6 +292,28 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Java/" itemprop="url" rel="index">
+                    <span itemprop="name">Java</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -291,7 +321,7 @@
 
           
           
-             <span id="/2017/12/21/Android状态栏着色小记/" class="leancloud_visitors" data-flag-title="Android状态栏着色小记">
+             <span id="/2019/04/21/《深入理解Java虚拟机》读书笔记 - Java内存区域/" class="leancloud_visitors" data-flag-title="《深入理解Java虚拟机》读书笔记 - Java内存区域">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -322,14 +352,21 @@
       
 
       
-        <p>最近项目有用到状态栏着色，之前一直都有参考<a href="http://www.jianshu.com/p/bae25b5eb867" target="_blank" rel="noopener">Android 状态栏着色实践</a>一文，挺好的。今天决定自己写一点关于状态栏着色的笔记，省的以后用上的时候又去翻收藏夹找文章。<br><a id="more"></a><br>这里只记录第一种方式。整体来说可以分为两个步骤，一是将状态栏透明化，二是将布局的最顶部View延伸到状态栏再对其做一些小小的paddingTop调整就可以啦。</p>
-<h3 id="一、状态栏透明化"><a href="#一、状态栏透明化" class="headerlink" title="一、状态栏透明化"></a>一、状态栏透明化</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (Build.VERSION.SDK_INT &gt;= Build.VERSION_CODES.LOLLIPOP) &#123;</span><br><span class="line">    <span class="comment">//5.0及以上</span></span><br><span class="line">    View decorView = getWindow().getDecorView();</span><br><span class="line">    <span class="keyword">int</span> option = View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN</span><br><span class="line">                    | View.SYSTEM_UI_FLAG_LAYOUT_STABLE;</span><br><span class="line">    decorView.setSystemUiVisibility(option);</span><br><span class="line">    getWindow().setStatusBarColor(Color.TRANSPARENT);</span><br><span class="line">&#125; <span class="keyword">else</span> <span class="keyword">if</span> (Build.VERSION.SDK_INT &gt;= Build.VERSION_CODES.KITKAT) &#123;</span><br><span class="line">     <span class="comment">//4.4到5.0</span></span><br><span class="line">     WindowManager.LayoutParams localLayoutParams = getWindow().getAttributes();</span><br><span class="line">     localLayoutParams.flags = (WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS | localLayoutParams.flags);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="二、修改布局文件"><a href="#二、修改布局文件" class="headerlink" title="二、修改布局文件"></a>二、修改布局文件</h3><p>将最外层ViewGroup的android:fitsSystemWindows=”false”，让布局延伸至状态栏。<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">com.lcgao.widget.SlideRight</span> <span class="attr">xmlns:android</span>=<span class="string">"http://schemas.android.com/apk/res/android"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:id</span>=<span class="string">"@+id/id_activity_slide_right"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:layout_width</span>=<span class="string">"match_parent"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:layout_height</span>=<span class="string">"match_parent"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:fitsSystemWindows</span>=<span class="string">"false"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:scrollbars</span>=<span class="string">"none"</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
-<p>再将Toolbar的paddingTop设置为状态栏的高度，如果在布局顶部使用了Toolbar，记得要把Toolbar的layout_height属性设置为wrap_content：<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">android.support.design.widget.AppBarLayout</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:layout_width</span>=<span class="string">"match_parent"</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:layout_height</span>=<span class="string">"wrap_content"</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:theme</span>=<span class="string">"@style/AppTheme.AppBarOverlay"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">android.support.v7.widget.Toolbar</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:id</span>=<span class="string">"@+id/id_layout_toolbar"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:layout_width</span>=<span class="string">"match_parent"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:layout_height</span>=<span class="string">"wrap_content"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:layout_gravity</span>=<span class="string">"right"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:background</span>=<span class="string">"@color/switch_track_disabled_dark"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:paddingTop</span>=<span class="string">"@dimen/padding_top"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">android.support.design.widget.AppBarLayout</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
-<p>这里因为只有在Android 4.4（API19）以后的版本才可以对状态栏进行着色，所以只对API19以后的设置paddingTop为25dp，否则在API19以前的设备上会看到25dp的多余部分，这时候就要通过在不同的values文件里面写相关的padding_top了：<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">//values</span><br><span class="line"><span class="tag">&lt;<span class="name">dimen</span> <span class="attr">name</span>=<span class="string">"padding_top"</span>&gt;</span>0dp<span class="tag">&lt;/<span class="name">dimen</span>&gt;</span></span><br><span class="line"></span><br><span class="line">//values-v19</span><br><span class="line"><span class="tag">&lt;<span class="name">dimen</span> <span class="attr">name</span>=<span class="string">"padding_top"</span>&gt;</span>25dp<span class="tag">&lt;/<span class="name">dimen</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
-<p>这样一来只会在API19以后的设备才会多增加25dp的高度至状态栏，而API19以前的设备就不会增加了，最终效果如下，设备为Android4.4版本：</p>
-<p><img src="http://upload-images.jianshu.io/upload_images/4093296-8cc2bc8e8ba9504e.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="效果图"></p>
-<p>另外，最近在做Cordova的混合开发，发现一个小问题，在继承CordovaActivity的Activity中，状态栏透明化部分的代码（本文第一段代码）要在loadUrl(launchUrl)之后写，不然在一些设备上会透明化失败，达不到想要的效果。</p>
+        <h3 id="运行时数据区域"><a href="#运行时数据区域" class="headerlink" title="运行时数据区域"></a>运行时数据区域</h3><p><strong>程序计数器</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;程序计数器（Program Counter Register）是一块较小的内存空间，<strong>线程私有</strong>，它可以看作是当前线程所执行的字节码的行号指示器。字节码指示器通过改变这个计数器的值来选取下一条需要执行的字节码指令，分支、循环、跳转、异常处理、线程恢复等基础功能都要依赖这个计数器来完成。如果正在执行的是Native方法，这个计数器值则为空（Undefined）。此内存区域是唯一一个在Java虚拟机规范中没有规定任何OutOfMemoryError情况的区域。<br><a id="more"></a><br><strong>Java虚拟机栈</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>线程私有</strong>，它的生命周期和线程相同。虚拟机栈描述的是Java方法执行的内存模型：每个方法在执行的同时都会创建一个栈帧（Stack Frame）用于存储局部变量表、操作数栈、动态链接、方法出口等信息。每一个方法从调用直至执行完成的过程，就对应着一个栈帧在虚拟机栈中入栈到出栈的过程。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;局部变量表存放了编译期可知的各种基本数据类型（boolean、byte、char、short、int、float、long、double）、对象引用（reference类型，它不等同于对象本身，可能是一个指向对象起始地址的引用指针，也可能是指向一个代表对象的句柄或其他对象相关的位置）和returnAddress类型（指向了一条字节码指令的地址）。</p>
+<p><strong>本地方法栈</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;本地方法栈（Native Method Stack）与虚拟机栈所放回的作用是非常相似的，它们之间的区别不过是虚拟机栈为虚拟机执行Java 方法（也就是字节码）服务，而本地方法栈则为虚拟机使用到的Native方法服务。</p>
+<p><strong>Java堆</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Java堆（Java Heap）是Java虚拟机所管理的内存中最大的一块。Java堆是被所有<strong>线程共享</strong>的一块内存区域，在虚拟机启动时创建。此内存区域额唯一目的就是存放对象实例，几乎所有的对象实例都在这里分配内存。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Java堆是垃圾收集器管理的主要区域，因此很多时候也被称做“GC堆（Garbage Collected Heap）”。从内存回收的角度来看，由于现在的收集器基本都采用分代收集算法，所以Java堆中还可以细分为：新生代和老年代；在细致一点的有Eden空间、From Survivor空间、To Survivor空间等。</p>
+<p><strong>方法区</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;方法区（Method Area）与Java堆一样，是各个<strong>线程共享</strong>的内存区域，它用于存储已被虚拟机加载的类信息、常量、静态变量、即时编译后的代码等数据。</p>
+<p><strong>运行时常量池</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;运行时常量池（Runtime Constant Pool）是方法区的一部分。Class文件中除了有类的版本、字段、方法、接口等描述信息外，还有一项信息是常量池（Constant Pool Table），用于存放编译期生成的各种字面量和符号引用，这部分内容将在类加载后进入方法区的运行时常量池中存放。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;运行时常量池是方法区的一部分，自然也受到方法区内存的限制，当常量池无法再申请到内存时会抛出OutOfMemoryError异常。</p>
+<h3 id="HotSpot虚拟机中的对象"><a href="#HotSpot虚拟机中的对象" class="headerlink" title="HotSpot虚拟机中的对象"></a>HotSpot虚拟机中的对象</h3><p><strong>对象的创建</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;虚拟机遇到一条new指令时，首先将去检查这个指令的参数是否能在常量池中定位到一个类的符号引用，并检查这个符号引用代表的类是否已被加载、解析和初始化过。如果没有，那必须先执行相应的类加载过程。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在类加载检查通过后，接下来虚拟机将为新生对象分配内存。对象所分配内存的大小在类加载完成后便可完全确定，为对象分配空间的任务等同于把一块确定大小的内存从Java堆中划分出来。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;内存分配完成后，虚拟机需要将分配到的内存空间都初始化为零值（不包括对象头），如果使用TLAB（Thread Local Allocation Buffer，本地线程分配缓冲区。把内存分配的动作按照线程划分在不同的空间之中进行，即每个线程在Java堆中预先分配一小块内存。），这一工作也可以提前至TLAB分配时进行。这一步操作保证了对象的实例字段在Java代码中可以不赋初始值就直接使用，程序能访问到这些字段的数据类型所对应的零值。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;接下来，虚拟机要对对象进行必要的设置，例如这个对象是哪个类的实例、如何才能找到类的元数据信息、对象的哈希码、对象的GC分代年龄等信息，这些信息存放在对象的对象头（Object Header）之中。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在上面的工作都完成之后，从虚拟机的视角来看，一个新的对象已经产生了，但从Java程序的视角来看，对象的创建才刚刚开始–<init>方法还没有执行，所有的字段都还为零。所以，一般来说（由字节码中是否跟随invokespecial指令所决定），执行new指令之后会接着执行<init>方法，把对象按照程序员的意愿进行初始化，这样一个真正地对象才算完全产生出来。</init></init></p>
+<p><strong>对象的内存布局</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在HotSpot虚拟机中，对象在内存中存储的布局可以分为3块区域：对象头（Header）、实例数据（Instance Data）和对齐填充（Padding）。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HotSpot虚拟机的对象头包括两部分信息，第一部分用于存储对象自身运行时数据，如哈希码（HashCode）、GC分代年龄、锁状态标志、线程持有的锁、偏向线程ID、偏向时间戳等。对象头的另一部分是类型指针，即对象指向它的类元数据的指针，虚拟机通过这个指针来确定这个对象是哪一个类的实例。如果对象是一个Java数组，那在对象头中还必须有一块用于记录数组长度的数据，因为虚拟机可以通过普通的Java对象的元数据信息确定Java对象的大小，但是从数组的元数据中却无法确定数组的大小。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;接下来的实例数据部分是对象真正存储的有效信息，也是程序代码中所定义的各种类型的字段内容。无论是从父类继承下来的，还是在子类中定义的，都需要记录起来。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;第三部分对齐填充并不是必然存在的，也没有特别的含义，它仅仅起着占位符的作用。由于HotSpot VM的自动内存管理系统要求对象起始地址必须是8字节的整数倍，换句话说，就是对象的大小必须是8字节的整数倍。而对象头部分正好是8字节的倍数（1倍或2倍），因此，当对象实例数据部分没有对齐时就需要通过对齐来填充来补全。</p>
+<p><strong>对象的访问定位</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;建立对象是为了使用对象，我们的Java程序需要通过栈上的reference数据来操作堆上的具体对象。由于reference类型在Java虚拟机规范中只规定了一个指向对象的引用，并没有指定这个引用应该通过何种方式去定位、访问堆中对象的具体位置，所以对象访问的方式也是取决于虚拟机实现而定的。目前主流的访问方式有使用句柄和直接指针两种。</p>
+<ul>
+<li><p>句柄：使用句柄的话，那么Java堆中将会划分出一块内存来作为句柄池，reference中存储的就是对象的句柄地址，而句柄中包含了对象实例数据与类型数据各自的具体地址信息。</p>
+</li>
+<li><p>直接指针：如果使用直接指针访问，那么Java堆对象的布局中就必须考虑如何放置访问类型数据的相关信息，而reference中存储的直接就是对象地址。</p>
+</li>
+</ul>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这两种对象访问方式各有优势，使用句柄访问的最大好处就是reference中存储的是稳定地句柄地址，在对象被移动（垃圾收集时移动对象是非常普遍的行为）时只会改变句柄中的实例数据指针，而reference本身不需要修改。而使用直接指针访问方式的最大好处就是速度更快，它节省了一次指针定位的时间开销，由于对象的访问在Java中非常频繁，因此这类开销积少成多后也是一项非常可观的执行成本。在HotSpot中，是使用第二种方式进行对象访问的。</p>
 
       
     </div>
@@ -354,8 +391,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/12/21/hello-world/" rel="next" title="Hello Hexo">
-                <i class="fa fa-chevron-left"></i> Hello Hexo
+              <a href="/2017/12/27/BottomNavigationView+Fragments/" rel="next" title="BottomNavigationView+Fragments">
+                <i class="fa fa-chevron-left"></i> BottomNavigationView+Fragments
               </a>
             
           </div>
@@ -443,12 +480,21 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
             
 
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">分类</span>
+                
+              </div>
             
 
             
@@ -490,7 +536,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#一、状态栏透明化"><span class="nav-number">1.</span> <span class="nav-text">一、状态栏透明化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二、修改布局文件"><span class="nav-number">2.</span> <span class="nav-text">二、修改布局文件</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#运行时数据区域"><span class="nav-number">1.</span> <span class="nav-text">运行时数据区域</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HotSpot虚拟机中的对象"><span class="nav-number">2.</span> <span class="nav-text">HotSpot虚拟机中的对象</span></a></li></ol></div>
             
 
           </div>
@@ -510,7 +556,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; 2016 &mdash; <span itemprop="copyrightYear">2017</span>
+        <div class="copyright">&copy; 2016 &mdash; <span itemprop="copyrightYear">2019</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
